@@ -4,11 +4,11 @@ import type {
   InferGetServerSidePropsType,
 } from "next";
 import { useEffect, useState } from "react";
-import answers from "./answers.json";
-import Form from "./components/form";
-import GameOver from "./components/gameOver";
-import Guess from "./components/guess";
-import Info from "./components/info";
+import answers from "answers.json";
+import Form from "components/form";
+import GameOver from "components/gameOver";
+import Guess from "components/guess";
+import Info from "components/info";
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const answer = answers[Math.floor(Math.random() * answers.length)];
