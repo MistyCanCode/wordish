@@ -16,6 +16,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   return { props: { answer } };
 };
 
+
 const Home: NextPage = ({
   answer,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
@@ -43,6 +44,7 @@ const Home: NextPage = ({
    );
  }
  return(
+   <title>Wordish</title>
    <div className="grid place-items-center">
      <Info />
      <Form guess={guess} setGuess={setGuess}/>
