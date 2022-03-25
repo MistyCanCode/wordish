@@ -44,12 +44,14 @@ const Home: NextPage = ({
    );
  }
  return(
+   <>
    <title>Wordish</title>
    <div className="grid place-items-center">
      <Info />
      <Form guess={guess} setGuess={setGuess}/>
      <Guess guess={guess} answer={answer} />
    </div>
+     </>
  )
 
 };
